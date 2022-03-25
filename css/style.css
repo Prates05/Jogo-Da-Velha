@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Roboto:ital,wght@1,500&display=swap');
+
+:root{
+    background: rgba(134, 113, 133, 0.589);
+}
+
+body{
+    font-family: "Roboto";
+}
+
+
+h2 , h3{
+    margin-top: -5px;
+    text-align: center;
+}
+
+#tela-escura{
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    color: white;
+    display: none;
+    padding-top: 20px;
+    position: absolute;
+    background-color: black;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(109, 26, 91);
+    border: 3px solid black;
+}
+
+.grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.celula{
+    width: 75px;
+    height: 65px;
+    font-size: 30pt;
+    margin: 4px 2px;
+    font-weight: 300;
+    padding-top: 10px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: rgba(167, 53, 142, 0.459);
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+      max-width: 300px;
+    }
+  }
+  
+  @media screen and (min-width: 401px) and (max-width: 1024px) {
+    .container {
+      max-width: 400px;
+    }
+    .celula {
+      margin: 13px 20px;
+    }
+  }
+  
